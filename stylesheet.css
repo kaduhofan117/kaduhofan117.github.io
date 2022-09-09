@@ -1,0 +1,4 @@
+@font-face{
+    font-family: 'segoe ui';
+    src: url('SegoeUI-VF.woff2') format("woff2") tech('variations'), url('SegoeUI-VF.woff2') format('woff2-variations');
+}
