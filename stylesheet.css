@@ -1,14 +1,11 @@
-@font-face{
+@font-face {
     font-family: 'segoe ui';
     src: url('SegoeUI-VF.woff2') format("woff2") tech('variations');
     src: url('SegoeUI-VF.woff2') format('woff2-variations');
     font-weight: 100 1000;
 }
 
-body{
-    display: flex;
-}
-h1{
+h1 {
     font-family: "segoe ui";
     font-weight: 620;
     font-variation-settings: 'opsz' 1000;
@@ -16,24 +13,90 @@ h1{
     margin: 5px;
     line-height: 1;
     letter-spacing: -2px;
+
 }
-a{
+
+#cross {
+    font-weight: 400;
+    display: inline-block;
+    transition: all 50ms ease-out;
+    font-family: "segoe ui";
+    font-variation-settings: 'opsz' 1000;
+    font-size: 75px;
+    margin: 5px;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+#cross:hover {
+    cursor: pointer;
+    color: #bec720;
+    transform: rotate(30deg)!important;
+}
+
+.top {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+#title {
+    transition: all 50ms ease-out;
+}
+
+a {
     font-family: 'segoe ui';
-    font-size: 65px;
-    font-weight: 520;
+    font-weight: normal;
     color: black;
     text-decoration: none;
     transition: color 1s ease-out;
-    line-height: 60px;
 }
-a:hover{
+
+a:hover {
     color: #bec720;
     transition: color 0s ease-out;
 }
-.menu{
-    padding-top: 15px;
-    margin-top: 5px;
-    width: 200px;
+
+.menu {
+    display: flex;
+    width: 368px;
     max-height: 100px;
+    padding: 10px;
+}
+
+.row {
+    width: 90%;
+    font-family: "segoe ui";
+    font-size: 20px;
+}
+
+#scroll {
+    width: 85%;
+    ;
+    height: 100px;
     overflow-y: scroll;
+}
+
+#hidden {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+
+}
+
+video {
+    position: fixed;
+    bottom: 8px;
+    width: 378px;
+    opacity: 50%;
+}
+
+
+.TBP {
+    color: rgb(182, 182, 182)
+}
+
+.TBP:hover {
+    color: rgb(89, 89, 89);
+    cursor: not-allowed;
 }

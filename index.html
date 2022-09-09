@@ -1,18 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="stylesheet.css">
-    </head>
-    <body>
-        <div class="row">
-    <h1 id="title">sonyapiss</h1>
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="top">
+    <h1 id="title">sonyapiss</h1><span id="cross" style="transform: rotate(45deg);" onclick="hide()">+</span>
 </div>
-<div class="row">
-    <div class="menu">
-    <a href="pdf/116.pdf">116</a><br>
-    <a href="pdf/117.pdf">117</a><br>
-    <a href="pdf/118.pdf">118</a><br>   
-</div>
-</div>
+    <div class="hidden" id='hidden'>
+        <div class="menu">
+            <div class="row">PDFs:</div>
+            <div class="row" id="scroll">
+            <a href="/pdf/116.pdf">116</a><br>
+            <a class="TBP" href="#">117</a><br>          
+            <a class="TBP" href="#">118</a><br>
+            <a class="TBP" href="#">119</a><br>
+            <a class="TBP" href="#">120</a><br>
+            <a class="TBP" href="#">121</a><br>
+            <a class="TBP" href="#">122</a><br>
+            <a class="TBP" href="#">123</a><br>
+            <a class="TBP" href="#">124</a><br>
+            <a class="TBP" href="#">125</a><br>
+            <a class="TBP" href="#">126</a><br>
+            <a class="TBP" href="#">127</a><br>
+            <a class="TBP" href="#">128</a><br>
+            <a class="TBP" href="#">129</a><br>
+            <a class="TBP" href="#">130</a><br>
+            <a class="TBP" href="#">131</a><br>
+            <a class="TBP" href="#">132</a><br>
+            <a class="TBP" href="#">133</a><br>
+            <a class="TBP" href="#">134</a><br>
+            <a class="TBP" href="#">135</a><br>
+            <a class="TBP" href="#">136</a><br>
+            <a class="TBP" href="#">137</a><br>
+            <a class="TBP" href="#">138</a><br>
+            <a class="TBP" href="#">139</a><br>
+            <a class="TBP" href="#">140</a><br>
+            <a class="TBP" href="#">141</a><br>
+            <a class="TBP" href="#">142</a><br>
+            <a class="TBP" href="#">143</a><br>
+            <a class="TBP" href="#">144</a><br>
+            <a class="TBP" href="#">145</a><br>
+            <a class="TBP" href="#">146</a><br>
+            <a class="TBP" href="#">147</a><br>
+            <a class="TBP" href="#">148</a><br>
+            <a class="TBP" href="#">149</a><br>
+            <a class="TBP" href="#">150</a><br>
+            <a class="TBP" href="#">151</a><br>
+            <a class="TBP" href="#">152</a><br>
+            <a class="TBP" href="#">153</a><br>
+            <a class="TBP" href="#">154</a><br>
+            <a class="TBP" href="#">155</a><br>
+            <a class="TBP" href="#">156</a><br>
+            <a class="TBP" href="#">157</a><br>
+            <a class="TBP" href="#">158</a><br>
+            <a class="TBP" href="#">159</a><br>
+            <a class="TBP" href="#">160</a><br>
+            <a class="TBP" href="#">161</a><br>
+            <a class="TBP" href="#">162</a><br>
+            <a class="TBP" href="#">163</a><br>
+            <a class="TBP" href="#">164</a><br>
+            <a class="TBP" href="#">165</a><br>
+            <a class="TBP" href="#">166</a><br>
+            <a class="TBP" href="#">167</a><br>
+            <a class="TBP" href="#">168</a><br>
+            <a class="TBP" href="#">169</a><br>
+            <a class="TBP" href="#">170</a><br>
+            <a class="TBP" href="#">171</a><br>
+            <a class="TBP" href="#">172</a><br>
+            <a class="TBP" href="#">173</a><br>
+            <a class="TBP" href="#">174</a><br>
+            <a class="TBP" href="#">175</a><br>
+            <a class="TBP" href="#">176</a><br>
+        </div>
+        </div>
+
+        <div class="menu">
+            <div class="row">team:</div>
+            <div class="row" id="scroll">
+            tazi<br>
+            gabriel<br>
+            sonya<br>
+        </div>
+        </div>
+
+        <div class="menu">
+            <div class="row">links:</div>
+            <div class="row" id="scroll">
+            discord
+        </div>
+        </div>
+
+        
+        <video  controls muted loop autoplay src="sandals.mp4"></video>
+        <video  controls muted loop autoplay src="cheesy.mp4"></video>
+            
+    </div>
 </body>
+
 </html>
+
+<script>
+var cross = document.getElementById('cross')
+var hidden = document.getElementById("hidden")
+var title = document.getElementById("title")
+
+function hide(){
+
+    if (cross.style.transform === 'rotate(45deg)') {
+        hidden.style.height = '0px';
+        cross.style.transform = 'rotate(0deg)'
+        title.style.fontWeight = '250'
+    }
+    else {
+        hidden.style.height = '400px';
+        cross.style.transform = 'rotate(45deg)'
+        title.style.fontWeight = '620'
+    }
+
+}
+</script>
