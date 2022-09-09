@@ -110,12 +110,12 @@ var title = document.getElementById("title")
 function hide(){
 
     if (cross.style.transform === 'rotate(45deg)') {
-        hidden.style.height = '0px';
+        hidden.style.display= 'none';
         cross.style.transform = 'rotate(0deg)'
         title.style.fontWeight = '250'
     }
     else {
-        hidden.style.height = '400px';
+        hidden.style.display = 'block';
         cross.style.transform = 'rotate(45deg)'
         title.style.fontWeight = '620'
     }
