@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500&display=swap');
-
+    
+    @font-face {
+    font-family: 'Helvetica52';
+    src: local("Helvetica-52.woff");
+    font-weight: bold;
+}
     a {
       text-decoration: none;
       color: inherit;
@@ -41,11 +46,14 @@
     }
 
     .chapter {
-      font-family: arial;
+      font-family: 'Helvetica52';
       font-size: 12.5px;
       margin-top: 5px;
+      font-weight: bold;
       width: auto;
+      padding: 2.5px;
       display: inline-block;
+      transition: all 0.25s;
     }
 
     .hidden {
@@ -73,6 +81,12 @@
 
     .chapter:hover .white {
       color: black;
+    }
+
+    .chapter:hover{
+      /* font-size: 15px; */
+      animation: all 1s;
+      background-color: #efefef;
     }
 
     .chapter:hover .whitefake {
