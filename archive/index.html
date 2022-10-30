@@ -7,8 +7,7 @@
     
     @font-face {
     font-family: 'Helvetica52';
-    src: local("Helvetica-52.woff");
-    font-weight: bold;
+    src: url("Helvetica-52.woff");
 }
     a {
       text-decoration: none;
@@ -27,29 +26,29 @@
       padding-top: 0;
       width: 50vw;
       height: 5.5vw;
-      margin-top: -0.5vw;
+      margin-top: -10vh;
       margin-left: -2vw;
       mix-blend-mode: exclusion;
       filter: invert();
+      position: fixed;
 
     }
 
     .main {
+      
       width: 50vw;
       overflow-y: scroll;
       padding-right: 5px;
-      padding-top: 7.5vh;
+      padding-top: 10vh;
       height: 50vh;
       background-color: white;
       color: black;
-      margin-top: -5vh;
     }
 
     .chapter {
       font-family: 'Helvetica52';
       font-size: 12.5px;
       margin-top: 5px;
-      font-weight: bold;
       width: auto;
       padding: 2.5px;
       display: inline-block;
@@ -84,7 +83,7 @@
     }
 
     .chapter:hover{
-      /* font-size: 15px; */
+       font-size: 15px; 
       animation: all 1s;
       background-color: #efefef;
     }
@@ -143,8 +142,9 @@
 
 <body ontouchstart="">
   <meta name="viewport" content="width=device-width, initial-scale=0.8,">
+ <div class="main">
   <div class="title"><img width="100%" src=" logo.svg"></img></div>
-  <div class="main">
+  
 
     <a href=" 116_comicfuz.pdf">
       <div class="chapter"><b>[Chapter 116]</b></br> Synopsis: <span class="white">Yasuna brings an eel. </span> Agiri
