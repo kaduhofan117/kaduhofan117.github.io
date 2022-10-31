@@ -46,7 +46,6 @@
       height: 50vh;
       background-color: white;
       color: black;
-      scroll-snap-type: y proximity;
     }
 
     .chapter {
@@ -123,13 +122,21 @@
     }
 
     @media (orientation: portrait) {
-      .title {
-        font-size: 10vw;
-      }
+
+      body {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% - 20px);
+    margin: 0;
+    padding: 10px;
+    flex-direction: column;
+}
 
       .main {
         width: 100%;
         height: 40%;
+        z-index: 999;
         overflow-x: hidden;
         overflow-y: scroll;
       }
@@ -148,6 +155,11 @@
 
       .white {
         opacity: 90%
+      }
+      iframe{
+        width: 100%;
+        height: 50vh;
+        transform: rotate(180deg);
       }
     }
   </style>
