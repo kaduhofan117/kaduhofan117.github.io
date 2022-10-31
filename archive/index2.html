@@ -17,7 +17,8 @@
     body {
       background-color: white;
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: column;
+      align-items: flex-end;
 
     }
 
@@ -30,7 +31,7 @@
       width: 100%;
       height: 5.5vw;
       margin-top: -35px;
-      margin-left: -2vw;
+      margin-left: -10px;
       mix-blend-mode: exclusion;
       filter: invert();
       top:0;
@@ -56,13 +57,14 @@
       padding: 2.5px;
       display: inline-block;
       transition: all 0.25s;
+      scroll-snap-align: center;
     }
 
     .hidden {
       display: none;
       position: fixed;
-      left: 8;
-      top: 6vw;
+      left: 10;
+      top: 10;
     }
 
     .hidden img {
@@ -89,11 +91,17 @@
        font-size: 15px; 
       animation: all 1s;
       background-color: #efefef;
+      color: #a9a9a9;
     }
 
     .chapter:hover .whitefake {
       animation: flash 0.5s infinite;
       color: #ff0000
+    }
+
+    iframe{
+      height: 45%;
+      width: 50vw;
     }
 
     @keyframes flash {
@@ -121,11 +129,11 @@
 
       .main {
         width: 95vw;
-        height: 30vh;
+        height: 35vh;
       }
 
       .title {
-        width: 95vw;
+        width: 100%;
       }
 
       .hidden {
@@ -229,28 +237,24 @@
           src="https://img.comic-fuz.com/e/1xtGst/6hQ.webp?h=lqLn_i6fmZPpwOzWN3UORA&e=5000000000"></img></span>
     </a>
 
-    <a href=" 125_drive.pdf">
-      <div class="chapter"><b>[Chapter 153]</b></br> Synopsis: <span class="white">Yasuna wants to play an IRL survival
-          game. </span> Agiri appearance: <span class="white">yes</span> Contains colored pages: <span
+    <a href=" 153_drive.pdf">
+      <div class="chapter"><b>[Chapter 153]</b></br> Synopsis: <span class="white">Yasuna wants to get ripped.</span> Agiri appearance: <span class="white">no</span> Contains colored pages: <span
           class="white">no</span>
-        Death in Final Panel: <span class="white">yes</span> Uniform: <span class="white">Blazers</span> Origin:  <span class="white">MEGA</span></div>
+        Death in Final Panel: <span class="white">no</span> Uniform: <span class="white">Short sleeve</span> Origin:  <span class="white">MEGA</span></div>
 
       <span class="hidden"><img
           src="https://img.comic-fuz.com/e/1xtGta/6hR.webp?h=Zx5-uwc2jx9IMx7KDsTkVQ&e=5000000000"></img></span>
     </a>
 
-    <a href=" 126_drive.pdf">
-      <div class="chapter"><b>[Chapter 154]</b></br> Synopsis: <span class="white">Yasuna bought hypnosis goggles.
-        </span> Agiri appearance: <span class="white">no</span> Contains colored pages: <span class="white">no</span>
-        Death in Final Panel: <span class="white">no</span> Uniform: <span class="white">Blazers</span> Origin:  <span class="white">MEGA</span> <a
-          href="https://mangadex.org/chapter/c2619264-c7db-4f4e-a732-5ba427184e9c"
-          style="text-decoration:underline;">translation attempt</a></div>
+    <a href=" 154_drive.pdf">
+      <div class="chapter"><b>[Chapter 154]</b></br> Synopsis: <span class="white">Agiri clones herself.</span> Agiri appearance: <span class="white">yes</span> Contains colored pages: <span class="white">no</span>
+        Death in Final Panel: <span class="white">no</span> Uniform: <span class="white">Long sleeve</span> Origin:  <span class="white">MEGA</span></div>
 
       <span class="hidden"><img
           src="https://img.comic-fuz.com/e/1xtGtN/6hS.webp?h=vuXWo5PwTgkgbtgN8ZTgVw&e=5000000000"></img></span>
     </a>
 
-    <a href=" 127_drive.pdf">
+    <a href=" 155_drive.pdf">
       <div class="chapter"><b>[Chapter 155]</b></br> Synopsis: <span class="white">Yasuna tries to put on a freak show.
         </span> Agiri appearance: <span class="white">no</span> Contains colored pages: <span class="white">no</span>
         Death in Final Panel: <span class="white">off-screen</span> Uniform: <span class="white">Blazers</span> Origin:  <span class="white">MEGA</span> <a
@@ -416,6 +420,8 @@
 
 
   </div>
+  <br>
+  <iframe src="index.html"></iframe>
 </body>
 
 </html>

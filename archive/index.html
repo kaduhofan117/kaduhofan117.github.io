@@ -16,9 +16,11 @@
 
     body {
       background-color: white;
+      display: flex;
+      flex-direction: column;
+
     }
 
- 
     .title {
       font-family: arial;
       font-weight: bold;
@@ -38,13 +40,13 @@
 
     .main {
       
-      max-width: 50vw;
-      width:25em;
+      width: 50vw;
       overflow-y: scroll;
       padding-right: 5px;
       height: 50vh;
       background-color: white;
       color: black;
+      scroll-snap-type: y proximity;
     }
 
     .chapter {
@@ -55,6 +57,7 @@
       padding: 2.5px;
       display: inline-block;
       transition: all 0.25s;
+      scroll-snap-align: center;
     }
 
     .hidden {
@@ -69,7 +72,7 @@
     }
 
     .chapter:hover+.hidden {
-      display: flex;
+      display: block;
     }
 
     .whitefake {
@@ -85,14 +88,20 @@
     }
 
     .chapter:hover{
-       font-size: 15px; 
+      font-size: 15px; 
       animation: all 1s;
       background-color: #efefef;
+      color: #a9a9a9;
     }
 
     .chapter:hover .whitefake {
       animation: flash 0.5s infinite;
       color: #ff0000
+    }
+
+    iframe{
+      height: 45%;
+      width: 50vw;
     }
 
     @keyframes flash {
@@ -120,11 +129,11 @@
 
       .main {
         width: 95vw;
-        height: 30vh;
+        height: 35vh;
       }
 
       .title {
-        width: 95vw;
+        width: 100%;
       }
 
       .hidden {
@@ -423,6 +432,8 @@
 
 
   </div>
+<br>
+  <iframe src="index2.html"></iframe>
 </body>
 
 </html>
