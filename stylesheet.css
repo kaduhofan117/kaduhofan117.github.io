@@ -59,20 +59,19 @@ a:hover {
 
 .menu {
     display: flex;
-    width: 368px;
+    width: 85%;
     max-height: 100px;
     padding: 10px;
 }
 
 .row {
-    width: 90%;
+    width: 65%;
     font-family: "segoe ui";
     font-size: 20px;
 }
 
 #scroll {
     width: 85%;
-    ;
     height: 100px;
     overflow-y: scroll;
 }
@@ -80,7 +79,6 @@ a:hover {
 #hidden {
     position: relative;
     overflow: hidden;
-    height: 400px;
 
 }
 
@@ -90,6 +88,13 @@ video {
     width: 378px;
     opacity: 50%;
     
+}
+
+.one{
+    width: 380px;
+    height: calc(85vh - 370px);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -104,7 +109,7 @@ video {
 
 @media (orientation: portrait) {
     video{
-        width: 100%;
+        width: calc(100vw - 16px);
         height: 50%;
         object-fit: fill;
     }
